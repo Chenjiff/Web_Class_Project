@@ -1,0 +1,43 @@
+body {
+	width: 1455px;
+	border-width: 15px;
+	border-style: double;
+	border-color: #06953f;
+	border-radius: 30px 40px;
+	background-color: #f0e051;
+	background-image: url("lemon.png");
+	background-repeat: no-repeat;
+	background-position: 200px 140px;
+}
+p {
+
+	font-size: 100pt;
+	height: 300px;
+	display: inline-block;
+	font-family: Century Gothic;
+	font-weight: bold;
+	margin-left: 700px;
+}
+img {
+	position: absolute;
+	margin-left: 150px;
+	margin-top: 150px;
+	width: 350px;
+}
+a {
+	font-size: 60pt;
+  color: #f05151;
+	font-family: Georgia;
+	font-weight: bold;
+	padding: 30px;
+	border-width: 15px;
+	border-style: groove;
+	border-color: #ffb820;
+	border-radius: 10px 10px;
+}
+div {
+	font-size: 40pt;
+	font-family: Verdana;
+	font-weight: normal;
+	text-align: center;
+}
