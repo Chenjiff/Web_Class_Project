@@ -1,2 +1,2 @@
-# Web_Class_Project
+# Web_Class_Projects
 HTML + CSS + JS (A little node.js at last)
