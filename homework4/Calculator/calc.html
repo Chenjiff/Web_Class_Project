@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="calc.css">
+  <script type="text/javascript" src="calc.js"></script>
+  <title>My Calculator</title>
+</head>
+<body onload="update();">
+  <div id="major">
+    <div id="calc">
+      <div id="error"></div>
+      <div id="outfield">
+        <div id="outstr">0</div>
+      </div>
+      <div id="inp">
+        <div class="col">
+          <button>(</button><button>7</button>
+          <button>4</button><button>1</button><button>.</button>
+        </div>
+        <div class="col">
+          <button>)</button><button>8</button>
+          <button>5</button><button>2</button><button>0</button>
+        </div>
+        <div class="col">
+          <button>/</button><button>9</button>
+          <button>6</button><button>3</button><button>CE</button>
+        </div>
+        <div class="col">
+          <button>del</button><button>*</button>
+          <button>−</button><button>+</button><button>=</button>
+        </div>
+      </div>
+    </div>
+    <div id="select">
+      <form>
+        select precision:
+        <select id="selc">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected="selected">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
