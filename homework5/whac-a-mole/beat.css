@@ -1,0 +1,142 @@
+#main {
+  width: 777px;
+  height: auto;
+  font-family: "Century Gothic", Verdana, sans-serif;
+  color: #444444;
+}
+#title {
+  font-size: 31pt;
+  text-align: center;
+} 
+#top {
+  text-align: center;
+  font-size: 17pt;
+}
+#menu {
+  width: 420px;
+  margin: 10px auto;
+  font-size: 15pt;
+}
+#leftbut {
+  width: 250px;
+  height: 50px;
+  float: left;
+}
+a{
+  color: #444444;
+  text-decoration: none;
+}
+#start {
+  padding: 0 5px;
+  border-radius: 3px 3px;
+  box-shadow: 0 0 2px #6f6f6f;
+}
+#over {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 3px 3px;
+  box-shadow: 0 0 1px green;
+  text-align: center;
+}
+#rec {
+  margin-left: 50px;
+  width: 120px;
+  height: 50px;
+  float: left;
+}
+#time {
+  float: right;
+}
+#score {
+  float: right;
+  margin-top: 10px;
+}
+#w1{
+  display: inline-block;
+}
+#w2{
+  display: inline-block;
+}
+#cou1 {
+  width: 40px;
+  height: 22px;
+  border: solid 1px #e1e1e1;
+  float: right;
+  padding-left: 6px;
+}
+#cou2 {
+  width: 40px;
+  height: 22px;
+  border: solid 1px #e1e1e1;
+  float: right;
+  padding-left: 6px;
+}
+#clr {
+  clear: both;
+}
+#game {
+  width: 360px;
+  height: 235px;
+  border-style: solid;
+  border-width: 2px 0 2px 0;
+  border-color: #b2b2b2;
+  margin: 50px auto;
+}
+table {
+  border-collapse: separate; 
+  border-spacing: 8px 14px;
+  margin: 0 auto;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  border-radius: 50%;
+  box-shadow: 0 0 4px grey;
+  font-size: 0px;
+  padding: 12px;
+}
+#bottom {
+  font-family: "Century Gothic", Verdana, sans-serif;
+  font-size: 15pt;
+}
+#ins {
+  font-weight: bold;
+}
+@keyframes check {
+  from {box-shadow: 0 0 4px grey;}
+  to {box-shadow: 0 0 5px blue;}
+}
+@-webkit-keyframes check {
+  from {box-shadow: 0 0 4px grey;}
+  to {box-shadow: 0 0 5px blue;}
+}
+.sele {
+  animation: check 0.4s infinite alternate;
+  -webkit-animation: check 0.4s infinite alternate;
+}
+@keyframes bingo {
+  50% {box-shadow: 0 0 20px green;}
+  100% {box-shadow: 0 0 4px grey;}
+}
+@-webkit-keyframes bingo {
+  50% {box-shadow: 0 0 20px green;}
+  100% {box-shadow: 0 0 4px grey;}
+}
+.bgs {
+  animation: bingo 0.5s 1;
+  -webkit-animation: bingo 0.5s 1;
+}
+@keyframes ero {
+  50% {box-shadow: 0 0 20px red;}
+  100% {box-shadow: 0 0 4px grey;}
+}
+@-webkit-keyframes ero {
+  50% {box-shadow: 0 0 20px red;}
+  100% {box-shadow: 0 0 4px grey;}
+}
+.eros {
+  animation: ero 0.5s 1;
+  -webkit-animation: ero 0.5s 1;
+}
+

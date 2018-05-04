@@ -1,0 +1,193 @@
+@keyframes warn{
+  to {background-color: red;}
+}
+@-webkit-keyframes warn{
+  to {background-color: red;}
+} 
+@keyframes chg{
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes chg{
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+.chg {
+  animation: chg 0.4s linear 0s 1;
+  -webkit-animation: chg 0.4s linear 0s 1;
+}
+.warning {
+  animation: warn 0.5s linear 0s 4 alternate;
+  -webkit-animation: warn 0.5s linear 0s 6 alternate;
+}
+#main {
+  width: 940px;
+  height: auto;
+  font-family: "Century Gothic", Verdana, sans-serif;
+} 
+#top div {
+  font-size: 15pt;
+  color: #3f3f3f;
+  text-align: center;
+  margin-top: 6px;
+}
+#top div:nth-child(1) {
+  font-size: 21pt;
+}
+#game {
+  position: relative;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  z-index: 0;
+}
+.pos {
+  position: relative;
+  float: left;
+  z-index: 2; 
+}
+#rpos {
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 300px;
+}
+#st {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 205px;
+  margin-left: 5px;
+  background-color: #84FE82;
+  font-size: 25pt;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+#ed {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 205px;
+  margin-left: 455px;
+  background-color: #8684FF;
+  font-size: 25pt;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+#check {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  margin-top: 200px;
+  margin-left: 451px;
+}
+.wall{
+  background-color: #eeeeee;
+}
+.lose_wall{
+  background-color: #eeeeee;
+}
+#game .pos:nth-of-type(1) {
+  width: 150px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(1) .wall{
+  border: solid #686868;
+  border-width: 2px 0 0 2px;
+  height: 48px; 
+}
+#game .pos:nth-of-type(2) {
+  width: 200px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(2) .wall{
+  border: solid #686868;
+  border-width: 2px 0px 2px 0px;
+  height: 46px; 
+}
+#game .pos:nth-of-type(3) {
+  width: 150px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(3) .wall{
+  border: solid #686868;
+  border-width: 2px 2px 0px 0px;
+  height: 48px; 
+}
+#game .pos:nth-of-type(4) {
+  width: 150px;
+  height: 150px; 
+}
+#game .pos:nth-of-type(4) .wall{
+  border: solid #686868;
+  border-width: 0px 2px 2px 2px;
+  height: 148px; 
+}
+#game .pos:nth-of-type(5) {
+  width: 100px;
+  height: 150px; 
+  margin-left: 50px;
+  margin-top: 50px;
+}
+#game .pos:nth-of-type(5) .wall{
+  border: solid #686868;
+  border-width: 2px 2px 0px 2px;
+  height: 148px; 
+}
+#game .pos:nth-of-type(6) {
+  width: 150px;
+  height: 150px; 
+  margin-left: 50px;
+}
+#game .pos:nth-of-type(6) .wall{
+  border: solid #686868;
+  border-width: 0px 2px 2px 2px;
+  height: 148px; 
+}
+#game .pos:nth-of-type(7) {
+  width: 200.1px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(7) .wall{
+  border: solid #686868;
+  border-width: 2px 0px 2px 2px;
+  height: 46px; 
+}
+#game .pos:nth-of-type(8) {
+  width: 99.9px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(8) .wall{
+  border: solid #686868;
+  border-width: 0px 0px 2px 0px;
+  height: 48px; 
+}
+#game .pos:nth-of-type(9) {
+  width: 200px;
+  height: 50px; 
+}
+#game .pos:nth-of-type(9) .wall{
+  border: solid #686868;
+  border-width: 2px 2px 2px 0px;
+  height: 46px; 
+}
+#game #clr{
+  clear: both;
+}
+#tips {
+  font-size: 14pt;
+  color: #6b6b6b;
+  width: 620px;
+  margin: 0 auto;
+}
+#tips div {
+  width: 103px;
+  height: 26px;
+  background-color: #eeeeee;
+  border: solid #686868 2px; 
+  margin: 0 auto;
+}
