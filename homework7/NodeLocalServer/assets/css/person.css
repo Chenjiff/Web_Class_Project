@@ -1,0 +1,23 @@
+body {
+  font-size: 14pt;
+  background-image: url("../img/bg.jpg");
+  background-size: ;
+  font-family: "PMingLiU", sans-serif;
+}
+#page {
+  width: 100%;
+  min-width: 830px;
+}
+#main {
+  width: 400px;
+  border: solid 4px black;
+  border-radius: 20px;
+  text-align: center;
+  margin-left: calc(100% - 690px);
+  margin-top: 120px;
+  position: relative;
+  color: #9DC5A0;
+  background-color: #014820;
+}
+
+

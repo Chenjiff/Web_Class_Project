@@ -1,0 +1,158 @@
+body {
+  background-image: url("../image/5-120622115335.jpg");
+  color: #1c1c1c;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+#main {
+  width: 400px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  font-family: Georgia, Garamond, sans-serif;
+} 
+#ref {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 75% 75% 75% 75%;
+  padding: 2px 5px;
+  top: 6px;
+  right: 0;
+  cursor: pointer;
+}
+#img {
+  position: absolute;
+  width: 1px;
+  background-image: url("../image/panda.jpg");
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.7s;
+}
+.imgapp {
+  opacity: 1!important;
+  transform: translateX(100px);
+  width: 200px!important;
+  height: 200px!important;
+}
+#game {
+  width: 400px;
+  height: 400px;
+}
+table {
+  border-spacing: 0px 0px;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  display: block;
+  box-shadow: 0 0 2px black;
+  width: 98px;
+  height: 98px;
+  cursor: pointer;
+  transition: all 0.14s linear;
+}
+label:hover {
+  transform: scale(1.05), translateZ(0);
+}
+#space {
+  display: none;
+}
+button {
+  width: 130px;
+  height: 30px;
+  margin-top: 30px;
+  font-size: 18pt;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 10px;
+  background-image: url("../image/5-120622115335.jpg");
+  box-shadow: 3px 5px 5px grey;
+  font-family: Georgia, Garamond, sans-serif;
+}
+#set {
+  margin-top: 10px;
+}
+#set:hover {
+  transform: scale(1.02);
+}
+#but:hover {
+  transform: scale(1.02);
+}
+button:focus {
+  outline: none;
+}
+#setDiv {
+  position: relative;
+}
+#rag {
+  width: 10px;
+  height: 30px;
+  left: 0; 
+  right: 0; 
+  opacity: 0;
+  margin: auto;
+  position: absolute;
+  overflow: hidden;
+  white-space:nowrap; 
+  transition: all 0.3s;
+}
+#rag span{
+  line-height: 30px;
+  vertical-align: top;
+}
+#rag input{
+  height: 30px;
+}
+.app {
+  width: 200px!important;
+  transform: translateY(50px);
+  opacity: 1!important;
+}
+@keyframes rMove {
+  to {transform: translate3d(100%, 0, 0);}
+}
+@-webkit-keyframes rMove {
+  to {transform: translate3d(100%, 0, 0);}
+}
+.rm {
+  animation: rMove 0.19s 1;
+  -webkit-animation: rMove 0.19s 1;
+}
+@keyframes lMove {
+  to {transform: translate3d(-100%, 0, 0);}
+}
+@-webkit-keyframes lMove {
+  to {transform: translate3d(-100%, 0, 0);}
+}
+.lm {
+  animation: lMove 0.19s 1;
+  -webkit-animation: lMove 0.19s 1;
+}
+@keyframes uMove {
+  to {transform: translate3d(0, -100%, 0);}
+}
+@-webkit-keyframes uMove {
+  to {transform: translate3d(0, -100%, 0);}
+}
+.um {
+  animation: uMove 0.19s 1;
+  -webkit-animation: uMove 0.19s 1;
+}
+@keyframes dMove {
+  to {transform: translate3d(0, 100%, 0);}
+}
+@-webkit-keyframes dMove {
+  to {transform: translate3d(0, 100%, 0);}
+}
+.dm {
+  animation: dMove 0.19s 1;
+  -webkit-animation: dMove 0.19s 1;
+}

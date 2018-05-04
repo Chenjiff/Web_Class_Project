@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fifteen Puzzle</title>
+  <link rel="stylesheet" type="text/css" href="css/puzzle.css">
+  <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/puzzle.js"></script>
+</head>
+<body>
+  <div id="main">
+    <h1>PUZZLE</h1>
+    <div id="ref"><div id="img"></div>Reference</div>
+    <div id="game">
+      <table id="tab">
+          <tr>
+          <td><input type="radio" value="1"><label name="puz"></label></td>
+          <td><input type="radio" value="2"><label name="puz"></label></td>
+          <td><input type="radio" value="3"><label name="puz"></label></td>
+          <td><input type="radio" value="4"><label name="puz"></label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="5"><label name="puz"></label></td>
+          <td><input type="radio" value="6"><label name="puz"></label></td>
+          <td><input type="radio" value="7"><label name="puz"></label></td>
+          <td><input type="radio" value="8"><label name="puz"></label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="9"><label name="puz"></label></td>
+          <td><input type="radio" value="10"><label name="puz"></label></td>
+          <td><input type="radio" value="11"><label name="puz"></label></td>
+          <td><input type="radio" value="12"><label name="puz"></label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" value="13"><label name="puz"></label></td>
+          <td><input type="radio" value="14"><label name="puz"></label></td>
+          <td><input type="radio" value="15"><label name="puz"></label></td>
+          <td><input type="radio" value="0"><label name="puz" id="space"></label></td>
+        </tr>
+      </table>
+    </div>
+    <div><button id="but">Restart</button></div>
+    <div id="setDiv">
+      <div id="rag"><span>Level:&nbsp;</span><input id="bar" type="range" min=2 max=6 value=4>
+        <span id="lv">4</span></div>
+      <button id="set">Setting</button>
+    </div>
+  </div>
+</body>
+</html>

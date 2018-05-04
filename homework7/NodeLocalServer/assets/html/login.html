@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Log in</title>
+  <link rel="stylesheet" type="text/css" href="../css/login.css">
+  <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
+</head>
+<body>
+  <div id="page">
+    <div id="main">
+      <form id="form" method="post">
+        <p id="head">创建你的帐号</p>
+        <p><label for="name">用户名:&ensp;</label>
+        <input type="text" name="name" id="name"></p>
+        <p><label for="stid">&emsp;学号:&ensp;</label>
+        <input type="text" name="stid" id="stid"></p>
+        <p><label for="phone">&emsp;电话:&ensp;</label>
+        <input type="text" name="phone" id="phone"></p>
+        <p><label for="email">&emsp;邮箱:&ensp;</label>
+        <input type="text" name="email" id="email"></p>
+        <p>
+          <input type="button" name="submit" id="clear" value="重置">
+          <input type="button" name="submit" id="sub" value="注册">
+        </p>
+      </form>
+      <div id="warn"></div>
+    </div>
+  </div>
+</body>
+</html>
