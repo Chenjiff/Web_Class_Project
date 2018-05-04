@@ -1,0 +1,163 @@
+@keyframes jump{
+  0% {transform: translate(0px, -20px);}
+  100% {transform: translate(0px, 0px);}
+}
+body {
+  margin: 0px;
+}
+#at-plus-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#bottom-positioner {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(68% - 25px);
+}
+#button ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.info {
+  height: 47px;
+  width: 47px;
+  background-color: gray;
+  border-radius: 50% 50%;
+  overflow: hidden;
+  position: absolute;
+  transition: height 0.4s ease-out 0.3s, width 0.4s ease-out 0.3s, 
+              transform 0.4s ease-out 0.3s, opacity 0.15s 0.55s;
+  opacity: 0;
+}
+.info li {
+  display: inline-block;
+  position: absolute;
+   white-space: nowrap;
+}
+.info img {
+  vertical-align: bottom;
+}
+.user {
+  font-size: 21pt;
+  color: white;
+  font-weight: bold;
+  top: 5%;
+  left: 29%;
+}
+.user img {
+  width: 37px;
+}
+.comment {
+  font-size: 38pt;
+  color: white;
+  font-weight: bold;
+  left: 22%;
+  top: 24%;
+}
+.comment img {
+  width: 45px;
+}
+.mine {
+  font-size: 20pt;
+  color: #079E6E;
+  font-weight: bold;
+  margin-left: 31px;
+}
+.mine img {
+  width: 36px;
+}
+.posted {
+  top: 63%;
+}
+.like {
+  top: 63%;
+  left: 40%;
+}
+.page span {
+  margin-left: 13px;
+}
+
+.mine span {
+  margin-left: 11px;
+}
+#button #control-ring-container li {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: gray;
+  border-radius: 25px 25px;
+  opacity: 0;
+  transition: all 0.4s 0.3s;
+}
+#button #control-ring-container img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}
+#button #control-ring-container .unread {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  right: -13px;
+  top: -13px;
+  background-color: red;
+  border-radius: 13px 13px;
+  font-weight: bold;
+  color: white;
+  line-height: 26px;
+  text-align: center;
+}
+.icon {
+  background-color: #91b4fd;
+  background-image: url("assets/images/atplus_white.png");
+  background-size: 42px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50% 50%;
+  transition: all 0.4s 0.6s;
+}
+.apb:hover {
+  animation: jump 0.3s 0.16s;
+}
+#bottom-positioner:hover .icon {
+  background-image: url("assets/images/atplus_green.png");
+  background-color: rgba(48, 63, 159, 1);
+  transform: scale(1.5);
+  transition: all 0.4s 0.3s;
+}
+#bottom-positioner:hover .info {
+  transform: translate(-76.5px, -230px);
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  transition: height 0.5s ease-out 0.16s, width 0.5s ease-out 0.16s, 
+              transform 0.5s ease-out 0.16s, opacity 0.2s 0.16s;
+}
+#bottom-positioner:hover #control-ring-container li {
+  transition: all 0.5s 0.16s;
+  opacity: 1;
+}
+#bottom-positioner:hover .mask {
+  transform: translate(-95px, -50px);
+}
+#bottom-positioner:hover .history {
+  transform: translate(-110px, 4px);
+}
+#bottom-positioner:hover .message {
+  transform: translate(-92px, 58px);
+}
+#bottom-positioner:hover .setting {
+  transform: translate(-34px, 90px);
+}
+#bottom-positioner:hover .sign {
+  transform: translate(30px, 82px);
+}
